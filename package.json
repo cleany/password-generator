@@ -1,0 +1,29 @@
+{
+  "name": "password-generator",
+  "version": "1.0.0",
+  "description": "Generate argon2 + sha256 password hash",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cleany/password-generator.git"
+  },
+  "keywords": [
+    "argon2",
+    "sha256",
+    "password"
+  ],
+  "author": "Sébastien Boulle",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/cleany/password-generator/issues"
+  },
+  "homepage": "https://github.com/cleany/password-generator#readme",
+  "dependencies": {
+    "argon2": "^0.15.0",
+    "prompt": "^1.0.0",
+    "sha256": "^0.2.0"
+  }
+}
