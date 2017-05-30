@@ -7,9 +7,16 @@ prompt.start();
 prompt.get([{
   name: 'password',
   hidden: true,
+}, {
+  name: 'retype',
+  hidden: true,
 }], async (err, result) => {
   if (err) {
     console.log(err);
+    return;
+  }
+  if (result.password !== result.retype) {
+    console.log('passwords don\'t match');
     return;
   }
   const argon2Options = {
